@@ -7,12 +7,17 @@
 //
 
 #import "AppDelegate.h"
+#import "Vehicle.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    
+    NSNumber* price = [NSNumber numberWithInt:42];
+    Vehicle* vehicle = [[Vehicle alloc] vehicleWithName:@"Bohdan" andPrice:price];
+    NSLog(@"%@", vehicle);
+    
     return YES;
 }
 							

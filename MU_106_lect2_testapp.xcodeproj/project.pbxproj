@@ -21,6 +21,8 @@
 		11CE4A2B181AD9D7003EC64D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11CE4A0D181AD9D7003EC64D /* UIKit.framework */; };
 		11CE4A33181AD9D7003EC64D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11CE4A31181AD9D7003EC64D /* InfoPlist.strings */; };
 		11CE4A35181AD9D7003EC64D /* MU_106_lect2_testappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CE4A34181AD9D7003EC64D /* MU_106_lect2_testappTests.m */; };
+		11CE4A40181ADA48003EC64D /* Transport.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CE4A3F181ADA48003EC64D /* Transport.m */; };
+		11CE4A43181ADB12003EC64D /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CE4A42181ADB12003EC64D /* Vehicle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		11CE4A30181AD9D7003EC64D /* MU_106_lect2_testappTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MU_106_lect2_testappTests-Info.plist"; sourceTree = "<group>"; };
 		11CE4A32181AD9D7003EC64D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		11CE4A34181AD9D7003EC64D /* MU_106_lect2_testappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MU_106_lect2_testappTests.m; sourceTree = "<group>"; };
+		11CE4A3E181ADA48003EC64D /* Transport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transport.h; sourceTree = "<group>"; };
+		11CE4A3F181ADA48003EC64D /* Transport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transport.m; sourceTree = "<group>"; };
+		11CE4A41181ADB12003EC64D /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
+		11CE4A42181ADB12003EC64D /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,10 @@
 			children = (
 				11CE4A18181AD9D7003EC64D /* AppDelegate.h */,
 				11CE4A19181AD9D7003EC64D /* AppDelegate.m */,
+				11CE4A3E181ADA48003EC64D /* Transport.h */,
+				11CE4A3F181ADA48003EC64D /* Transport.m */,
+				11CE4A41181ADB12003EC64D /* Vehicle.h */,
+				11CE4A42181ADB12003EC64D /* Vehicle.m */,
 				11CE4A1B181AD9D7003EC64D /* Main.storyboard */,
 				11CE4A1E181AD9D7003EC64D /* ViewController.h */,
 				11CE4A1F181AD9D7003EC64D /* ViewController.m */,
@@ -199,6 +209,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Anvar Azizov";
 				TargetAttributes = {
+					11CE4A05181AD9D7003EC64D = {
+						DevelopmentTeam = 63QK7MRVTT;
+					};
 					11CE4A26181AD9D7003EC64D = {
 						TestTargetID = 11CE4A05181AD9D7003EC64D;
 					};
@@ -252,6 +265,8 @@
 				11CE4A20181AD9D7003EC64D /* ViewController.m in Sources */,
 				11CE4A1A181AD9D7003EC64D /* AppDelegate.m in Sources */,
 				11CE4A16181AD9D7003EC64D /* main.m in Sources */,
+				11CE4A40181ADA48003EC64D /* Transport.m in Sources */,
+				11CE4A43181ADB12003EC64D /* Vehicle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +393,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MU_106_lect2_testapp/MU_106_lect2_testapp-Prefix.pch";
 				INFOPLIST_FILE = "MU_106_lect2_testapp/MU_106_lect2_testapp-Info.plist";
@@ -391,6 +407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MU_106_lect2_testapp/MU_106_lect2_testapp-Prefix.pch";
 				INFOPLIST_FILE = "MU_106_lect2_testapp/MU_106_lect2_testapp-Info.plist";
