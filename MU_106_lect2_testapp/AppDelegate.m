@@ -13,13 +13,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+
+    Vehicle *vec1 = [[Vehicle alloc] init];
+    vec1.name = @"Bogdan";
+    vec1.price = [NSNumber numberWithInt:2];
+    NSString *resultvec = [vec1 vehicleWithName:vec1.name andPrice:vec1.price];
     
-    Transport *transport = [[Transport alloc] init];
-    transport.name = @"Bogdan";
-    
-    Vehicle *vehicle = [[Vehicle alloc] init];
-    vehicle.price = [NSNumber numberWithFloat:2.50];
-    NSLog(@"Tranport with name %@ and price %@ UAH", transport.name, vehicle.price);
+    NSLog(@"%@", resultvec);
     
     return YES;
 }

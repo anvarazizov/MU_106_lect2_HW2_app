@@ -9,8 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "Transport.h"
 
-@interface Vehicle : NSObject
+@interface Vehicle : Transport
 
 @property NSNumber *price;
+
+-(NSString *)vehicleWithName:(NSString *)name andPrice:(NSNumber *)price;
 
 @end

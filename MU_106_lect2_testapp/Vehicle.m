@@ -20,4 +20,10 @@
     return self;
 }
 
+-(NSString *)vehicleWithName:(NSString *)name andPrice:(NSNumber *)price {
+    
+    NSString *message = [NSString stringWithFormat:@"Transport named %@ with price %@", self.name, self.price];
+    return message;
+}
+
 @end
