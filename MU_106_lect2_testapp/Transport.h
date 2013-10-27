@@ -10,6 +10,6 @@
 
 @interface Transport : NSObject
 
-@property (weak, nonatomic) NSString* name;
+@property NSString *name;
 
 @end

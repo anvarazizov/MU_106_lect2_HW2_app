@@ -14,9 +14,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    NSNumber* price = [NSNumber numberWithInt:42];
-    Vehicle* vehicle = [[Vehicle alloc] vehicleWithName:@"Bohdan" andPrice:price];
-    NSLog(@"%@", vehicle);
+    Transport *transport = [[Transport alloc] init];
+    transport.name = @"Bogdan";
+    
+    Vehicle *vehicle = [[Vehicle alloc] init];
+    vehicle.price = [NSNumber numberWithFloat:2.50];
+    NSLog(@"Tranport with name %@ and price %@ UAH", transport.name, vehicle.price);
     
     return YES;
 }

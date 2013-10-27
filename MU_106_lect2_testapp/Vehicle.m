@@ -20,14 +20,4 @@
     return self;
 }
 
-- (Vehicle *)vehicleWithName:(NSString *)name andPrice:(NSNumber *)price {
-
-    if ( self ) {
-        [self vehicleWithName: name andPrice: price];
-    }
-    
-    return self;
-}
-
-
 @end

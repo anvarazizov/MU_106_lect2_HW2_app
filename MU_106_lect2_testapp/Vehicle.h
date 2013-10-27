@@ -11,9 +11,6 @@
 
 @interface Vehicle : NSObject
 
-@property (weak, nonatomic) NSNumber* price;
-
-- (Vehicle *)vehicleWithName:(NSString *)name andPrice:(NSNumber *)price;
-
+@property NSNumber *price;
 
 @end
