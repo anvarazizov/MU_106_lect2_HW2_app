@@ -10,6 +10,6 @@
 
 @interface Transport : NSObject
 
-@property NSString *name;
+@property (nonatomic, strong) NSString *name;
 
 @end

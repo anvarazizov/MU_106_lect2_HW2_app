@@ -14,16 +14,18 @@
 {
     self = [super init];
     if (self) {
-        // Initialization code here.
+        
     }
     
     return self;
 }
 
--(NSString *)vehicleWithName:(NSString *)name andPrice:(NSNumber *)price {
++(Vehicle *)vehicleWithName:(NSString *)name andPrice:(NSNumber *)price {
     
-    NSString *message = [NSString stringWithFormat:@"Transport named %@ with price %@", self.name, self.price];
-    return message;
+    Vehicle *result = [[Vehicle alloc] init];
+    result.name = name;
+    result.price = price;
+    return result;
 }
 
 @end

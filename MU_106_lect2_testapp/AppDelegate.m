@@ -14,12 +14,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 
-    Vehicle *vec1 = [[Vehicle alloc] init];
-    vec1.name = @"Bogdan";
-    vec1.price = [NSNumber numberWithInt:2];
-    NSString *resultvec = [vec1 vehicleWithName:vec1.name andPrice:vec1.price];
+    Vehicle *testObj = [Vehicle vehicleWithName:@"ololo" andPrice:@1];
     
-    NSLog(@"%@", resultvec);
+    NSLog(@"%@", testObj);
     
     return YES;
 }

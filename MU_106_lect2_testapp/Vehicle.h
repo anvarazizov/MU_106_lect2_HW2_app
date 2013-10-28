@@ -6,13 +6,12 @@
 //  Copyright (c) 2013 Anvar Azizov. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "Transport.h"
 
 @interface Vehicle : Transport
 
-@property NSNumber *price;
+@property (nonatomic, strong) NSNumber *price;
 
--(NSString *)vehicleWithName:(NSString *)name andPrice:(NSNumber *)price;
++(Vehicle *)vehicleWithName:(NSString *)name andPrice:(NSNumber *)price;
 
 @end
